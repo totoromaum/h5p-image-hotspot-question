@@ -1,66 +1,66 @@
 {
   "semantics": [
     {
-      "label": "Image Hotspot Question Editor",
+      "label": "이미지 핫스팟 문제 편집기",
       "fields": [
         {
-          "label": "Background image",
+          "label": "배경 이미지",
           "fields": [
             {
-              "label": "Background image",
-              "description": "Select an image to use as background the image hotspot question."
+              "label": "배경 이미지",
+              "description": "배경으로 선택할 이미지 선택"
             }
           ]
         },
         {
-          "label": "Hotspots",
-          "description": "Drag and drop the desired figure from the toolbar to create a new hotspot. Double-click to edit an existing hotspot. Drag the hotspot to move it. Pull the resize handler in the lower right corner to resize.",
+          "label": "핫스팟",
+          "description": "새 핫스팟을 만들려면 도구 모음에서 원하는 그림을 끌어다 놓으십시오. 기존 핫스팟을 편집하려면 두 번 클릭하십시오. 핫스팟을 끌어서 옮기십시오. 크기를 조정하려면 오른쪽 아래 모서리에 있는 크기 조정 핸들러를 당기십시오.",
           "fields": [
             {
-              "label": "Task description",
-              "description": "Instructions to the user."
+              "label": "과제 설명",
+              "description": "사용자에 대한 지침."
             },
             {
-              "label": "Hotspot",
-              "entity": "Hotspot",
+              "label": "핫스팟",
+              "entity": "핫스팟",
               "field": {
-                "label": "Hotspot",
+                "label": "핫스팟",
                 "fields": [
                   {
-                    "label": "userSettings",
+                    "label": "사용자 설정",
                     "fields": [
                       {
-                        "label": "Correct",
-                        "description": "There can be multiple correct hotspots. However, the user gets correct/incorrect feedback immediately after first click."
+                        "label": "정답",
+                        "description": "정확한 핫스팟이 여러 개 있을 수 있다. 그러나 사용자는 첫 클릭 직후에 정확한/잘못된 답에 대한 피드백을 받는다"
                       },
                       {
-                        "label": "Feedback"
+                        "label": "피드백"
                       }
                     ]
                   },
                   {
-                    "label": "computedSettings"
+                    "label": "자동설정"
                   }
                 ]
               }
             },
             {
-              "label": "Feedback if the user selects an empty spot:",
-              "placeholder": "You didn't locate any hotspots, try again!"
+              "label": "사용자가 빈 곳을 선택한 경우 피드백:",
+              "placeholder": "핫스팟을 못 찾으셨군요, 다시 시도해보십시오!"
             },
             {
-              "label": "Show feedback as a popup"
+              "label": "팝업으로 피드백 보이기"
             },
             {
-              "label": "Localization",
+              "label": "맞춤설정",
               "fields": [
                 {
-                  "label": "Retry button text",
-                  "default": "Retry"
+                  "label": "재시도 버튼 텍스트",
+                  "default": "재시도"
                 },
                 {
-                  "label": "Close button text",
-                  "default": "Close"
+                  "label": "닫기 버튼 텍스트",
+                  "default": "닫기"
                 }
               ]
             }
@@ -69,12 +69,13 @@
       ]
     },
     {
-      "label": "Textual representation of the score bar for those using a readspeaker",
-      "default": "You got :num out of :total points"
+      "label": "자동 읽어주기를 위한 점수 막대의 텍스트 표현",
+      "default": "총 :total 에서 :num 획득"
     },
     {
-      "label": "Assistive technology description for \"Retry\" button",
-      "default": "Retry the task. Reset all responses and start the task over again."
+      "label": "\"Retry\" 버튼에 대한 보조 기술 설명",
+          "default": "재시도하세요. 모든 답변을 초기화하고 새로 시도하세요."
+
     }
   ]
 }
